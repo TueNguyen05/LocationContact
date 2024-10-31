@@ -1,0 +1,57 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShoes.vn - Liên Hệ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">myshoes<span>.vn</span></div>
+        <nav>
+            <a href="#">Giày Nike</a>
+            <a href="#">Giày Adidas</a>
+            <a href="#">Giày Lacoste</a>
+            <a href="#">Giày Puma</a>
+            <a href="#">Giày Asics</a>
+            <a href="#">Giày Thể Thao</a>
+        </nav>
+        <div class="account">
+            <a href="#">Tài khoản</a>
+            <a href="#" class="cart">🛒</a>
+        </div>
+    </header>
+
+    <section class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.112127593659!2d105.82689131538946!3d21.02701978599853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab99e66c5b5d%3A0x463347f0e69e7923!2zMjQ5IFjhuqEgxJDDtG5nLCDEkMO0bmcgRMOibmcsIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1697294316328!5m2!1svi!2s"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-info">
+            <h2>MYSHOES.VN SẴN SÀNG LẮNG NGHE BẠN!</h2>
+            <form>
+                <input type="text" placeholder="Họ và tên" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Thông tin" rows="4" required></textarea>
+                <label>
+                    <input type="checkbox" required> Tôi đã đọc và đồng ý với
+                    <a href="#">Chính sách bảo mật</a>
+                </label>
+                <button type="submit">XÁC NHẬN</button>
+            </form>
+        </div>
+
+        <div class="store-info">
+            <p><strong>Địa chỉ:</strong> 249 Xã Đàn, Đống Đa, Hà Nội</p>
+            <p><strong>Hotline:</strong> 0973711868</p>
+            <p><strong>Thời gian làm việc:</strong> 9:00 - 21:00</p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,88 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002f6c;
+    padding: 10px 20px;
+    color: white;
+}
+
+    .navbar .logo span {
+        color: red;
+    }
+
+    .navbar nav a {
+        margin: 0 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar .account a {
+        color: white;
+        margin-left: 10px;
+    }
+
+.map-section {
+    margin-top: 20px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.contact-info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+    .contact-info h2 {
+        margin-bottom: 20px;
+        color: #002f6c;
+    }
+
+    .contact-info form input,
+    .contact-info form textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .contact-info form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #002f6c;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .contact-info form button:hover {
+            background-color: #00509e;
+        }
+
+.store-info {
+    flex: 1;
+    margin-left: 20px;
+    color: #333;
+}
+
+    .store-info p {
+        margin-bottom: 10px;
+    }

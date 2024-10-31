@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/header.css">
+</head>
+<body>
+    <header class="header-classic">
+        <div class="logo-wrapper">
+            <div class="logo">
+                @Html.ActionLink("myshoes", "TrangChu", "Home", null, new { @class = "logo-link", style = "color: white;" })
+                <span>.vn</span>
+            </div>
+            <div>Giày chính hãng!</div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm sản phẩm..." />
+            <div class="search-icon"></div>
+        </div>
+        <div class="user-cart">
+            @Html.ActionLink("Tài khoản", "Dangnhap", "Home", null, new { @class = "btn" })
+            <a href="@Url.Action("Giohang", "Home")" class="cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 5H14.5a.5.5 0 0 1 .49.598l-1.5 7A.5.5 0 0 1 13 13H4a.5.5 0 0 1-.491-.408L1.61 1H.5a.5.5 0 0 1-.5-.5zM3 6l1.5 6h8l1.5-6H3z" />
+                </svg>
+                Giỏ hàng<span>0</span>
+            </a>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu">
+            <div class="left-menu">
+            <li>
+                @Html.ActionLink("Giày Nike", "TrangNike", "Home", null, new { @class = "product-link" })
+                <span class="label new">New</span>
+            </li>
+
+            <li><a href="#">Giày Adidas <span class="label sale">Sale</span></a></li>
+            <li><a href="#">Giày Lacoste <span class="label new">New</span></a></li>
+            <li><a href="#">Giày Puma <span class="label sale">Sale</span></a></li>
+            <li><a href="#">Giày Asics <span class="label new">New</span></a></li>
+            <li><a href="#">Giày Thể Thao</a></li>
+            <li><a href="#">SALE <span class="icon-sale">%</span></a></li>
+            </div>
+            <li class="right-menu">
+                @Html.ActionLink("Liên Hệ", "LienHe", "Home")
+                @Html.ActionLink("Blog", "TrangBlog", "Home")
+
+            </li>
+        </ul>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    @Html.Partial("_Footer")
+</body>
+</html>

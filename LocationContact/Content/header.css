@@ -1,0 +1,144 @@
+﻿/* Các đoạn CSS còn lại của bạn */
+.header-classic {
+    background-color: #0a3a70; /* Màu xanh nền */
+    padding: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Áp dụng box-sizing cho toàn bộ trang */
+* {
+    box-sizing: border-box;
+}
+
+/* Thiết lập logo */
+.logo-wrapper {
+    display: flex;
+    flex-direction: column; /* Đặt hướng theo cột để cho logo và tagline nằm dưới nhau */
+    align-items: center; /* Căn giữa các phần tử */
+}
+
+    .logo-wrapper .logo {
+        font-size: 2em;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        margin-bottom: 5px; /* Khoảng cách dưới logo */
+    }
+
+        .logo-wrapper .logo span {
+            color: red; /* Đặt màu đỏ cho phần .vn */
+        }
+
+/* Thanh tìm kiếm */
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+    .search-bar input[type="text"] {
+        width: 70%;
+        max-width: 400px;
+        padding: 8px;
+        border: none;
+        border-radius: 7px;
+        font-size: 14px;
+    }
+    
+
+        .search-bar input[type="text"]:focus {
+            outline: none;
+        }
+
+    .search-bar .search-icon {
+        margin-left: -30px;
+        cursor: pointer;
+    }
+
+.user-cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+    .user-cart a {
+        color: white; /* Đặt màu trắng cho liên kết tài khoản và giỏ hàng */
+        text-decoration: none;
+        display: flex;
+        flex-direction: column; /* Đặt hướng theo cột để cho tài khoản và mô tả nằm dưới nhau */
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .user-cart svg {
+        margin-bottom: 5px; /* Khoảng cách dưới biểu tượng */
+    }
+
+    .user-cart .cart span {
+        background-color: red;
+        color: white;
+        padding: 2px 7px;
+        border-radius: 50%;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+nav {
+    background-color: #003366;
+    padding: 10px;
+    margin-top: 0; /* Đặt margin-top là 0 để đảm bảo nav nằm ngay dưới header */
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between; /* Phân bố khoảng cách giữa hai phần tử */
+    align-items: center; /* Căn giữa các phần tử */
+    list-style-type: none;
+}
+
+.left-menu,
+.right-menu {
+    display: flex; /* Hiển thị flex để sử dụng tính năng flexbox */
+    gap: 20px; /* Khoảng cách giữa các mục menu */
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    padding-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    .menu a:hover {
+        background-color: #0055cc;
+    }
+
+.label {
+    background-color: green;
+    color: white;
+    font-size: 0.8em;
+    margin-left: 5px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+    .label.sale {
+        background-color: red;
+    }
+
+.icon-sale {
+    font-size: 1.2em;
+    color: red;
+}
+
+    .icon-sale:before {
+        content: "⌀"; /* Sale icon */
+    }
